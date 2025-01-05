@@ -6,7 +6,32 @@
 
 @layer base {
   :root {
-
-    --radius: 0.5rem
+    --radius: 0.5rem;
   }
+}
+
+body {
+  background-color: #121827;
+}
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+.header {
+  height: 80px;
+background-color:greenyellow;
+  grid-area: header;
+}
+.main {
+  height: calc(100vh - 80px);
+  background-color: antiquewhite;
+  grid-area: main;
+}
+.footer {
+  height: 300px;
+background-color: purple;
+  grid-area: footer;
 }
