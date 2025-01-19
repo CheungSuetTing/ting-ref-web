@@ -12,6 +12,7 @@
 
 body {
   background-color: #121827;
+  color: #f8fafc;
 }
 .grid-container {
   display: grid;
@@ -22,15 +23,25 @@ body {
     "footer";
 }
 .header {
-  background-color:greenyellow;
+  background-color: #121827;
   grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  position: sticky;
+  top: 0;
 }
+.logo {
+  filter: drop-shadow(2px 0 0 white) drop-shadow(0 2px 0 white) drop-shadow(-2px 0 0 white) drop-shadow(0 -2px 0 white);
+}
+
 .main {
   height: 100vh;
   background-color: antiquewhite;
   grid-area: main;
 }
 .footer {
-background-color: purple;
+  background-color:#1F2937;
   grid-area: footer;
 }
