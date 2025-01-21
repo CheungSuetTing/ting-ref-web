@@ -12,15 +12,15 @@ function App() {
         </div>
         <div className="flex items-center gap-6 text-sm">
           <div className="flex gap-1 hover:cursor-pointer">
-            buy
+            Buy
             <img src="/Icon/arrow.svg" width={16}></img>
           </div>
           <div className="flex gap-1 hover:cursor-pointer">
-            rent
+            Rent
             <img src="/Icon/arrow.svg" width={16}></img>
           </div>
           <div className="flex gap-1 hover:cursor-pointer">
-            sell
+            Sell
             <img src="/Icon/arrow.svg" width={16}></img>
           </div>
           <div className="hover:cursor-pointer">
@@ -29,9 +29,17 @@ function App() {
         </div>
       </div>
 
-
       <div className="main">main</div>
-      <div className="footer">footer</div>
+      <div className="footer">
+        <div>About Vivo Latam recommendations</div>
+        <div>
+          Recommendations are based on your location and search activity, such as the real estate properties you've viewed and saved and the
+          filters you've used. We use this information to bring similar real estate properties to your attention.
+        </div>
+        <div>a</div>
+        <div>a</div>
+        <div>a</div>
+      </div>
     </div>
   );
 }
