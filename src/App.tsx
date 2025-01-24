@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import { Button } from "./components/ui/button";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
 function App() {
   // https://www.vivolatam.com/en
@@ -36,8 +37,19 @@ function App() {
           Recommendations are based on your location and search activity, such as the real estate properties you've viewed and saved and the
           filters you've used. We use this information to bring similar real estate properties to your attention.
         </div>
-        <div>a</div>
-        <div>a</div>
+        <div>
+          <Select>
+            <SelectTrigger className="w-[180px]">
+              <SelectValue placeholder="Theme" />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectItem value="light">Light</SelectItem>
+              <SelectItem value="dark">Dark</SelectItem>
+              <SelectItem value="system">System</SelectItem>
+            </SelectContent>
+          </Select>
+        </div>
+        <hr className="w-[30%]"></hr>
         <div>a</div>
       </div>
     </div>
