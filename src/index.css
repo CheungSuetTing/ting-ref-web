@@ -45,6 +45,7 @@ body {
   background-color: #1f2937;
   grid-area: footer;
   display: grid;
-  grid-template-rows: repeat(4, 1fr) 6fr;
+  grid-template-rows: repeat(4, auto) 6fr;
+  align-items: center;
   justify-items: center;
 }
