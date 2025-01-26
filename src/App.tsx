@@ -69,17 +69,29 @@ function App() {
             </SelectContent>
           </Select>
         </div>
-        <hr className="w-[30%]"></hr>
+        <hr className="w-[20%]"></hr>
         <div className="w-full flex justify-between self-start pt-10">
-          <img className="logo" src="/logo.png" width={76}></img>
-          <div className="flex flex-col gap-4 items-end">
-            <div className="flex gap-8">
+          <div>
+            <img className="logo" src="/logo.png" width={120}></img>
+          </div>
+          <div className="flex flex-col gap-6 items-end">
+            <div className="text-sm flex gap-8">
               <div>About</div> <div>Blog</div> <div>Contact</div> <div>Legal</div>
             </div>
             <div className="flex gap-4">
-              <img src="/Icon/facebook.svg" width={24}></img>
-              <img src="/Icon/x.svg" width={24}></img>
-              <img src="/Icon/ig.svg" width={24}></img>
+              <img src="/Icon/facebook.svg" width={20}></img>
+              <img src="/Icon/x.svg" width={20}></img>
+              <img src="/Icon/ig.svg" width={20}></img>
+            </div>
+            <div className="text-sm flex flex-col gap-2 items-end">
+              <div>© 2025 Vivo Latam SAS de CV</div>
+              <div>© 2025 Vivo Latam LLC</div>
+              <div>Vivo Latam Bienes Raices El Salvador</div>
+              <div>+503 7653 1000</div>
+              <div>hola@vivolatam.com</div>
+              <div>Av. Las Magnolias 206</div>
+              <div>Colonia San Benito</div>
+              <div>San Salvador, El Salvador</div>
             </div>
           </div>
         </div>
