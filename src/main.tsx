@@ -9,9 +9,9 @@ import { ThemeProvider } from "./components/theme-provider.tsx";
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
-      <BrowserRouter>
+      <BrowserRouter basename="/ting-ref-web">
         <Routes>
-          <Route path="/" element={<App />} />
+          <Route index path="/" element={<App />} />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>

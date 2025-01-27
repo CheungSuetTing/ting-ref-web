@@ -1,5 +1,12 @@
 import { useState } from "react";
 import "./App.css";
+import logoUrl from "./assets/logo.png";
+import igUrl from "./assets/ig.svg";
+import arrowUrl from "./assets/arrow.svg";
+import facebookUrl from "./assets/facebook.svg";
+import profileUrl from "./assets/profile.svg";
+import websiteUrl from "./assets/website_logo.png";
+import xUrl from "./assets/x.svg";
 import { Button } from "./components/ui/button";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
@@ -9,23 +16,23 @@ function App() {
     <div className="grid-container">
       <div className="header">
         <div>
-          <img className="logo" src="/logo.png" width={76}></img>
+          <img className="logo" src={logoUrl} width={76}></img>
         </div>
         <div className="flex items-center gap-6 text-sm">
           <div className="flex gap-1 hover:cursor-pointer">
             Buy
-            <img src="/Icon/arrow.svg" width={16}></img>
+            <img src={arrowUrl} width={16}></img>
           </div>
           <div className="flex gap-1 hover:cursor-pointer">
             Rent
-            <img src="/Icon/arrow.svg" width={16}></img>
+            <img src={arrowUrl} width={16}></img>
           </div>
           <div className="flex gap-1 hover:cursor-pointer">
             Sell
-            <img src="/Icon/arrow.svg" width={16}></img>
+            <img src={arrowUrl} width={16}></img>
           </div>
           <div className="hover:cursor-pointer">
-            <img src="/Icon/profile.svg" width={36}></img>
+            <img src={profileUrl} width={36}></img>
           </div>
         </div>
       </div>
@@ -72,16 +79,16 @@ function App() {
         <hr className="w-[20%]"></hr>
         <div className="w-full flex justify-between self-start pt-10">
           <div>
-            <img className="logo" src="/logo.png" width={120}></img>
+            <img className="logo" src={logoUrl} width={120}></img>
           </div>
           <div className="flex flex-col gap-6 items-end">
             <div className="text-sm flex gap-8">
               <div>About</div> <div>Blog</div> <div>Contact</div> <div>Legal</div>
             </div>
             <div className="flex gap-4">
-              <img src="/Icon/facebook.svg" width={20}></img>
-              <img src="/Icon/x.svg" width={20}></img>
-              <img src="/Icon/ig.svg" width={20}></img>
+              <img src={facebookUrl} width={20}></img>
+              <img src={xUrl} width={20}></img>
+              <img src={igUrl} width={20}></img>
             </div>
             <div className="text-sm flex flex-col gap-2 items-end">
               <div>© 2025 Vivo Latam SAS de CV</div>
