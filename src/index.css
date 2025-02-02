@@ -29,7 +29,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px;
   position: sticky;
   top: 0;
 }
@@ -38,8 +37,8 @@ body {
 }
 
 .main {
-  height: 100vh;
-  background-color: antiquewhite;
+  min-height: 100vh;
+  background-color: #121827;
   grid-area: main;
 }
 .footer {
@@ -50,5 +49,5 @@ body {
   grid-template-rows: repeat(4, auto) 6fr;
   align-items: center;
   justify-items: center;
-  padding: 48px 16px;
+  padding: 48px 64px;
 }

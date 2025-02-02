@@ -1,20 +1,18 @@
-import { useState } from "react";
 import "./App.css";
 import logoUrl from "./assets/logo.png";
 import igUrl from "./assets/ig.svg";
 import arrowUrl from "./assets/arrow.svg";
 import facebookUrl from "./assets/facebook.svg";
 import profileUrl from "./assets/profile.svg";
-import websiteUrl from "./assets/website_logo.png";
 import xUrl from "./assets/x.svg";
-import { Button } from "./components/ui/button";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Outlet } from "react-router";
 
-function App() {
+function Layout() {
   // https://www.vivolatam.com/en
   return (
     <div className="grid-container">
-      <div className="header">
+      <div className="header container mx-auto">
         <div>
           <img className="logo" src={logoUrl} width={76}></img>
         </div>
@@ -37,7 +35,7 @@ function App() {
         </div>
       </div>
 
-      <div className="main">main</div>
+<Outlet></Outlet>
       <div className="footer">
         <div className="font-bold pb-4">About Vivo Latam recommendations</div>
         <div className="max-w-[768px] pb-6">
@@ -107,4 +105,4 @@ function App() {
   );
 }
 
-export default App;
+export default Layout;
