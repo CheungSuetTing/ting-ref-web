@@ -4,12 +4,13 @@ import "../App.css";
 import img1Url from "../assets/img1.jpg";
 import img2Url from "../assets/img2.jpg";
 import img3Url from "../assets/img3.jpg";
-import { HouseCard, ICardData } from "@/components/HouseCard";
+import { HouseCard, IHouseCardData } from "@/components/HouseCard";
+import { HomeCard, IHomeCardData } from "@/components/HomeCard";
 
 function Home() {
-  const dataList: ICardData[] = [
+  const houseCardDataList: IHouseCardData[] = [
     {
-      imgUrl: img3Url,
+      imgUrl: img1Url,
       price: "1,200,000",
       m2: 120,
       v2: 120,
@@ -19,7 +20,7 @@ function Home() {
       id: "08A2K2",
     },
     {
-      imgUrl: img3Url,
+      imgUrl: img2Url,
       price: "1,200,000",
       m2: 120,
       v2: 120,
@@ -89,15 +90,35 @@ function Home() {
       id: "08A2K2",
     },
   ];
+  const homeCardDataList: IHomeCardData[] = [
+    {
+      imgUrl: img1Url,
+      title: "Buy a home",
+      descriptions: "Find properties with a rich photo experience from trustworthy sellers verified by Vivo Latam.",
+      buttonText: "Browse homes",
+    },
+    {
+      imgUrl: img2Url,
+      title: "Rent a home",
+      descriptions: "Locate medium and long-term property rentals from our verified rental network.",
+      buttonText: "Find rentals",
+    },
+    {
+      imgUrl: img3Url,
+      title: "Sell a home",
+      descriptions: "We can help you sell your home quickly. We have a large network of local and international buyers.",
+      buttonText: "Add listing",
+    },
+  ];
   // https://www.vivolatam.com/en
   return (
     <div className="main container mx-auto flex flex-col gap-40 py-[80px]">
       <div className="flex">
         <div className="w-1/2 pr-[30px]">
-          <div className="font-medium text-7xl/[1.2] text-[#f8fafc] pb-[40px]">El Salvador homes, apartments, land & more</div>
+          <div className="font-medium text-7xl/[1.2] text-textWhite pb-[40px]">El Salvador homes, apartments, land & more</div>
           <div className="text-slate-500 pb-[40px]">Vivo Latam makes buying and selling real estate easy.</div>
           <Button size="lg" className="bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 animate-gradient">
-            <SearchIcon className="!fill-[#f8fafc]" />
+            <SearchIcon className="!fill-textWhite" />
             Search Property
           </Button>
         </div>
@@ -112,19 +133,24 @@ function Home() {
         </div>
       </div>
       <div>
-        <div className="font-medium text-4xl/[1.2] text-[#f8fafc] pb-3">Featured properties in El Salvador</div>
+        <div className="font-medium text-4xl/[1.2] text-textWhite pb-3">Featured properties in El Salvador</div>
         <div className="font-regular text-md text-slate-500 pb-12">Search recently listed properties for sale and rent</div>
         <div className="grid grid-cols-4 gap-8">
-          {dataList.map((data) => (
+          {houseCardDataList.map((data) => (
             <HouseCard cardData={data} />
           ))}
         </div>
         <div className="flex justify-center pt-8">
           <Button size="lg">
-            <SearchIcon className="!fill-[#f8fafc]" />
+            <SearchIcon className="!fill-textWhite" />
             Search Property
           </Button>
         </div>
+      </div>
+      <div className="grid grid-cols-3 gap-8">
+        {homeCardDataList.map((data) => (
+          <HomeCard cardData={data} />
+        ))}
       </div>
     </div>
   );
