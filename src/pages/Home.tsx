@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import SearchIcon from "../assets/search.svg?react";
+import CoinIcon from "../assets/coin.svg?react";
 import "../App.css";
 import img1Url from "../assets/img1.jpg";
 import img2Url from "../assets/img2.jpg";
@@ -210,6 +211,60 @@ function Home() {
           {countryCardDataList.map((data) => (
             <CountryCard cardData={data} />
           ))}
+        </div>
+      </div>
+      <div className="flex flex-col gap-16 px-12 py-20">
+        <div className="flex gap-20 items-center">
+          <img src={img2Url} className="rounded-3xl size-80"></img>
+          <div className="flex flex-col gap-4">
+            <div className="font-bold text-4xl/[1.2] text-textWhite">
+              Buy, sell, and rent properties with <br /> Bitcoin and Tether
+            </div>
+            <div className="text-md text-slate-500">
+              We make it easy for you to buy, sell, and rent properties with U.S. dollars, Bitcoin, and Tether.
+            </div>
+            <div className="flex gap-4 items-center font-bold text-2xl text-textWhite">
+              <CoinIcon className="size-10" />
+              $84,221
+            </div>
+            <div className="grid grid-cols-3 gap-8">
+              <div className="bg-blue-900 opacity-70 p-4 rounded-xl">
+                <div className="font-bold text-2xl text-textWhite">Simple</div>
+                <div className="text-textWhite">Transact in Bitcoin - no experience required</div>
+              </div>
+              <div className="bg-green-900 opacity-90 p-4 rounded-xl">
+                <div className="font-bold text-2xl text-textWhite">Fast</div>
+                <div className="text-textWhite">Quick settlement in Bitcoin and U.S. dollars</div>
+              </div>
+              <div className="bg-blue-900 opacity-70 p-4 rounded-xl">
+                <div className="font-bold text-2xl text-textWhite">Secure</div>
+                <div className="text-textWhite">Billions of flawless transactions on the Bitcoin network</div>
+              </div>
+            </div>
+            <div className="text-xs text-slate-500">
+              * Vivo Latam is partnered with licensed third parties to facilitate Bitcoin transactions in El Salvador. Vivo Latam is not
+              alicensed Bitcoin or financial services provider. Full KYC/AML and due diligence are required.
+            </div>
+          </div>
+        </div>
+        <div className="flex gap-20 items-center">
+          <div className="flex flex-col gap-4">
+            <div className="font-bold text-4xl/[1.2] text-textWhite">Invest in El Salvador</div>
+            <div className="text-md text-slate-500">
+              Vivo Latam is your gateway to investing in El Salvador's thriving real estate market. We connect you with leading property
+              developers.
+            </div>
+          </div>
+          <img src={img2Url} className="rounded-3xl size-80"></img>
+        </div>
+        <div className="flex gap-20 items-center">
+          <img src={img2Url} className="rounded-3xl size-80"></img>
+          <div className="flex flex-col gap-4">
+            <div className="font-bold text-4xl/[1.2] text-textWhite">Transact with confidence</div>
+            <div className="text-md text-slate-500">
+              Vivo Latam helps you verify property records and connect with verified owners for secure transactions.
+            </div>
+          </div>
         </div>
       </div>
     </div>
