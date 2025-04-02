@@ -8,6 +8,7 @@ import img3Url from "../assets/img3.jpg";
 import { HouseCard, IHouseCardData } from "@/components/HouseCard";
 import { HomeCard, IHomeCardData } from "@/components/HomeCard";
 import { CountryCard, ICountryCardData } from "@/components/CountryCard";
+import { BlogPost, IBlogPostData } from "@/components/BlogPost";
 
 function Home() {
   const houseCardDataList: IHouseCardData[] = [
@@ -159,6 +160,15 @@ function Home() {
       count: 3,
     },
   ];
+  const blogPostDataList: IBlogPostData[] = [
+    {
+      imgUrl: img1Url,
+      title:
+        "Exploring the Delightful World of Pupusas: El Salvador’s Beloved Exploring the Delightful World of Pupusas: El Salvador’s Beloved",
+      badge: "El Salvador",
+      date: "Nov 30, 2024",
+    },
+  ];
 
   // https://www.vivolatam.com/en
   return (
@@ -265,6 +275,17 @@ function Home() {
               Vivo Latam helps you verify property records and connect with verified owners for secure transactions.
             </div>
           </div>
+        </div>
+      </div>
+      <div className="flex flex-col gap-14 px-16 py-12 bg-slate-950">
+        <div className="flex flex-col gap-4">
+          <div className="font-bold text-4xl text-textWhite">Recent blog posts</div>
+          <div className="text-md text-slate-500">Explore our latest blog posts</div>
+        </div>
+        <div className="grid grid-cols-4 gap-8">
+          {blogPostDataList.map((data, index) => (
+            <BlogPost cardData={data} />
+          ))}
         </div>
       </div>
     </div>
