@@ -163,10 +163,51 @@ function Home() {
   const blogPostDataList: IBlogPostData[] = [
     {
       imgUrl: img1Url,
-      title:
-        "Exploring the Delightful World of Pupusas: El Salvador’s Beloved Exploring the Delightful World of Pupusas: El Salvador’s Beloved",
+      title: "Exploring the Delightful World of Pupusas: El Salvador’s Beloved",
       badge: "El Salvador",
       date: "Nov 30, 2024",
+    },
+    {
+      imgUrl: img1Url,
+      title: "San Salvador: A First Look at the City's Popular Neighborhoods",
+      badge: "El Salvador",
+      date: "Nov 9, 2024",
+    },
+    {
+      imgUrl: img1Url,
+      title: "Exploring Lake Ilopango: El Salvador’s Rising Star in Ecotourism",
+      badge: "El Salvador",
+      date: "Nov 9, 2024",
+    },
+    {
+      imgUrl: img1Url,
+      title: "Teatro Nacional de Santa Ana: A Cultural Treasure in El Salvador",
+      badge: "El Salvador",
+      date: "Nov 9, 2024",
+    },
+    {
+      imgUrl: img1Url,
+      title: "A Beacon of Knowledge: El Salvador's New National Library Transforms Culture and Innovation in Central America",
+      badge: "El Salvador",
+      date: "Nov 9, 2024",
+    },
+    {
+      imgUrl: img1Url,
+      title: "The Best Surf Spots and Surf Culture Evolution in El Salvador",
+      badge: "El Salvador",
+      date: "Nov 2, 2024",
+    },
+    {
+      imgUrl: img1Url,
+      title: "Exploring Eastern El Salvador: A Land of Volcanoes and Opportunity",
+      badge: "El Salvador",
+      date: "Nov 2, 2024",
+    },
+    {
+      imgUrl: img1Url,
+      title: "Exploring Lago de Coatepeque, El Salvador",
+      badge: "El Salvador",
+      date: "Oct 23, 2024",
     },
   ];
 
@@ -282,10 +323,13 @@ function Home() {
           <div className="font-bold text-4xl text-textWhite">Recent blog posts</div>
           <div className="text-md text-slate-500">Explore our latest blog posts</div>
         </div>
-        <div className="grid grid-cols-4 gap-8">
-          {blogPostDataList.map((data, index) => (
-            <BlogPost cardData={data} />
-          ))}
+        <div className="flex flex-col items-center gap-8">
+          <div className="grid grid-cols-4 gap-8">
+            {blogPostDataList.map((data) => (
+              <BlogPost cardData={data} />
+            ))}
+          </div>
+          <Button variant={"outlineDark"}>View all</Button>
         </div>
       </div>
     </div>

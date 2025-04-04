@@ -12,9 +12,9 @@ interface IBlogPostProps {
 export const BlogPost: React.FC<IBlogPostProps> = ({ cardData }: IBlogPostProps) => {
   return (
     <div className="flex flex-col gap-4">
-      <img src={cardData.imgUrl}></img>
+      <img src={cardData.imgUrl} className="object-cover w-full h-80"></img>
       <div className="flex flex-col gap-2">
-        <div className="text-lg font-semibold text-textWhite truncate">{cardData.title}</div>
+        <div className="text-lg font-semibold text-textWhite line-clamp-2">{cardData.title}</div>
         <div>
           <Badge variant={"outline"}>{cardData.badge}</Badge>
         </div>
