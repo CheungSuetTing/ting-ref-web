@@ -1,5 +1,4 @@
 import * as React from "react";
-import img1Url from "../assets/img1.jpg";
 
 export interface ICountryCardData {
   imgUrl: string;

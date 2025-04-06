@@ -9,7 +9,7 @@ export interface IBlogPostData {
 interface IBlogPostProps {
   cardData: IBlogPostData;
 }
-export const BlogPost: React.FC<IBlogPostProps> = ({ cardData }: IBlogPostProps) => {
+export const BlogCard: React.FC<IBlogPostProps> = ({ cardData }: IBlogPostProps) => {
   return (
     <div className="flex flex-col gap-4">
       <img src={cardData.imgUrl} className="object-cover w-full h-80"></img>

@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import "./font.css";
 import Home from "./pages/Home.tsx";
-import { BrowserRouter, Route, Routes } from "react-router";
+import { BrowserRouter, Route, Routes, ScrollRestoration } from "react-router";
 import { ThemeProvider } from "./components/theme-provider.tsx";
 import { LayoutGrid } from "lucide-react";
 import Layout from "./Layout.tsx";
