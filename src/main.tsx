@@ -7,7 +7,7 @@ import { BrowserRouter, Route, Routes, ScrollRestoration } from "react-router";
 import { ThemeProvider } from "./components/theme-provider.tsx";
 import { LayoutGrid } from "lucide-react";
 import Layout from "./Layout.tsx";
-import Blog from "./pages/Blog.tsx";
+import BlogList from "./pages/BlogList.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -15,8 +15,8 @@ createRoot(document.getElementById("root")!).render(
       <BrowserRouter basename="/ting-ref-web">
         <Routes>
           <Route element={<Layout />}>
-            <Route index path="/" element={<Home />}/>
-            <Route path="/blog" element={<Blog />}/>
+            <Route index path="/" element={<Home />} />
+            <Route path="/blog" element={<BlogList />} />
           </Route>
         </Routes>
       </BrowserRouter>
