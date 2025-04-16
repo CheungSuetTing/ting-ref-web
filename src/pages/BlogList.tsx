@@ -98,7 +98,12 @@ const BlogList: React.FC = () => {
             <Blog cardData={data} />
           ))}
         </div>
-        <div>b</div>
+        <div className="flex flex-col gap-6">
+          <div className="flex flex-col py-6 rounded-3xl bg-slate-950">
+            <div className="text-textWhite font-semibold text-xl border-b pb-4 border-slate-700 px-8">🎫 &nbsp; Filter by tag</div>
+          </div>
+          <div className="flex flex-col gap-14 px-16 py-8 rounded-3xl bg-slate-950 text-textWhite">Popular posts</div>
+        </div>
       </div>
     </div>
   );
