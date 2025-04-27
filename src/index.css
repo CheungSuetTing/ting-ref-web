@@ -23,6 +23,7 @@ body {
     "footer";
 }
 .header {
+  z-index: 10;
   background-color: #121827;
   color: #f8fafc;
   grid-area: header;

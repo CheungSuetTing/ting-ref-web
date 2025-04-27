@@ -6,7 +6,7 @@ import facebookUrl from "./assets/facebook.svg";
 import profileUrl from "./assets/profile.svg";
 import xUrl from "./assets/x.svg";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Outlet } from "react-router";
+import { Link, Outlet } from "react-router";
 
 function Layout() {
   // https://www.vivolatam.com/en
@@ -14,7 +14,9 @@ function Layout() {
     <div className="grid-container">
       <div className="header container mx-auto">
         <div>
-          <img className="logo" src={logoUrl} width={76}></img>
+          <Link to="/">
+            <img className="logo" src={logoUrl} width={76}></img>
+          </Link>
         </div>
         <div className="flex items-center gap-6 text-sm">
           <div className="flex gap-1 hover:cursor-pointer">
@@ -35,7 +37,7 @@ function Layout() {
         </div>
       </div>
 
-<Outlet></Outlet>
+      <Outlet></Outlet>
       <div className="footer">
         <div className="font-bold pb-4">About Vivo Latam recommendations</div>
         <div className="max-w-[768px] pb-6">
